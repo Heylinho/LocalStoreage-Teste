@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/Login.css">
+    <title>Nier Automata</title>
+</head>
+<body>
+
+    <main id="deslogado">
+        <div class="centro">
+            <h1 class="titulos-login">Crie a sua conta!</h1>
+            <form autocomplete="off" id="CriandoConta">
+                <input type="text" id="nome" class="box-edit" placeholder="Coloque seu nome..." required>
+                <input type="password" id="senha" class="box-edit" placeholder="Coloque sua senha..." required><br><br>
+                <input type="submit" class="box-submit-edit" value="Enviar resposta!">
+            </form>
+        </div>
+    </main>
+
+    <main id="logado">
+        <div class="centro">
+            <h1 class="titulos-login">Logue sua conta!</h1>
+            <form autocomplete="off" id="LogandoConta">
+                <input type="text" id="nome_con" class="box-edit" placeholder="Conta existente..." required>
+                <input type="password" id="senha_con" class="box-edit" placeholder="Conta existente..." required><br><br>   
+                <input type="submit" class="box-submit-edit" value="Logar Sua conta!"><br><br>
+                <button id="resetar" class="box-submit-edit">Criar Conta!</button>
+            </form>
+        </div>
+    </main>
+    
+
+    <script src="./js/Login.js"></script>
+</body>
+</html>

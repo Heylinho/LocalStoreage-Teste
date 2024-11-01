@@ -1,0 +1,101 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url('https://wallpapercave.com/wp/wp2757852.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centro{
+    width: 40%;
+    height: 65%;
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulos-login{
+    font-family: 'Kode Mono';
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.box-edit{
+    margin: 0.5rem;
+    padding: 1.0rem;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-edit::placeholder{
+    color: white;
+    font-family: 'Kode Mono';
+}
+
+.box-edit:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px rgba(11, 10, 12, 0.829) inset; /* Define a cor de fundo */
+    -webkit-text-fill-color: rgb(255, 255, 255); /* Define a cor do texto */
+}
+
+.box-submit-edit{
+    padding: 1.0rem;
+    background-color: rgba(255, 255, 255, 0.185);
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+
+.box-submit-edit:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+@media (min-width:2000px){
+    body{
+        font-size: 2rem;
+    }
+    .box-edit{
+        font-size: 2rem;
+    }
+    .box-submit-edit{
+        font-size: 2.0rem;
+    }
+}
+
+@media (max-width:900px){
+    .centro{
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width:320px){
+    .box-edit{
+        padding: 5px;
+    }
+}
